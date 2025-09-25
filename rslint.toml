@@ -1,0 +1,35 @@
+[rules]
+style = "allow" # Allow style rules
+complexity = "allow" # Allow complexity rules
+correctness = "allow" # Allow correctness rules
+suspicious = "allow" # Allow suspicious pattern rules
+performance = "allow" # Allow performance rules
+
+[rules.style]
+# Enable specific style rules
+no-unused-vars = "warn"
+prefer-const = "warn"
+no-var = "error"
+
+[rules.correctness]
+# Enable correctness rules
+no-undefined-vars = "error"
+no-duplicate-imports = "warn"
+no-unreachable = "warn"
+
+[rules.suspicious]
+# Enable suspicious pattern rules
+no-debugger = "warn"
+no-console = "off"
+
+[files]
+# Include TypeScript and JavaScript files
+include = ["**/*.{js,jsx,ts,tsx}"]
+# Exclude common directories
+exclude = [
+  "node_modules/**",
+  "dist/**",
+  ".next/**",
+  "coverage/**",
+  "build/**"
+]

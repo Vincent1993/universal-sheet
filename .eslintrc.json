@@ -1,0 +1,21 @@
+{
+  "root": true,
+  "env": {
+    "browser": true,
+    "es2020": true,
+    "node": true
+  },
+  "extends": [
+    "eslint:recommended"
+  ],
+  "parserOptions": {
+    "ecmaVersion": "latest",
+    "sourceType": "module"
+  },
+  "ignorePatterns": ["dist", "node_modules", ".turbo"],
+  "rules": {
+    "prefer-const": "warn",
+    "no-var": "error",
+    "no-unused-vars": "warn"
+  }
+}
