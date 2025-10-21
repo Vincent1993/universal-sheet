@@ -1,0 +1,46 @@
+{
+  "name": "universal-sheet",
+  "version": "0.1.0",
+  "description": "Composable filtering system with Formily integration, adapters, and plugins.",
+  "license": "MIT",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "rslib build",
+    "lint": "eslint \"src/**/*.{ts,tsx}\"",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit"
+  },
+  "keywords": [
+    "filter",
+    "plugin",
+    "adapter"
+  ],
+  "author": "",
+  "files": [
+    "dist"
+  ],
+  "peerDependencies": {
+    "react": ">=18",
+    "@tanstack/react-query": ">=5",
+    "@formily/react": ">=2.2"
+  },
+  "dependencies": {
+    "@formily/core": "^2.2.33",
+    "@formily/json-schema": "^2.2.33",
+    "@formily/shared": "^2.2.33",
+    "@tanstack/query-core": "^5.49.0",
+    "es-toolkit": "^1.8.0"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^6.21.0",
+    "@typescript-eslint/parser": "^6.21.0",
+    "eslint": "^8.56.0",
+    "eslint-config-prettier": "^9.1.0",
+    "react": "^18.2.0",
+    "typescript": "^5.4.5",
+    "vitest": "^1.6.1",
+    "@rsbuild/core": "^0.5.6"
+  }
+}
